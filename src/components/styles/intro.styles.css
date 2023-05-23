@@ -1,0 +1,12 @@
+.intro-sec{
+    margin: 2vw auto;
+    background-color: #1f232c;
+    width: 900px;
+    height: 40vh;
+}
+
+@media only screen and (max-width:1200px){
+.intro-sec{
+    width: 85%;
+}    
+}
