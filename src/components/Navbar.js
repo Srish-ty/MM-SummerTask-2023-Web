@@ -8,14 +8,9 @@ export const Navbar = () => {
      mode=='light'? setMode('dark'):setMode('light');
  
      let nav =document.getElementsByClassName('navbar')[0];
-     if(mode=='light'){ 
-         nav.style.backgroundColor = '#1f232c';
-         document.body.style.backgroundColor = '#303747';
-      }
-      else{
-         nav.style.backgroundColor = '#01243b';
-         document.body.style.backgroundColor = '#e9eef7';
-      }
+     nav.style.backgroundColor = (mode=='light'?'#1f232c':'#01243b');
+     document.body.style.backgroundColor = (mode=='light'?'#303747':'#e9eef7');
+
     }
   return (
     <nav className='navbar'>
