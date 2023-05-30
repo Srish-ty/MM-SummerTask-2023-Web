@@ -2,11 +2,45 @@
     margin: 2vw auto;
     background-color: #1f232c;
     width: 900px;
-    height: 40vh;
+    height: 50vh;
+    display: flex; flex-direction: row;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width:1200px){
 .intro-sec{
     width: 85%;
+    height: 60vh;
 }    
+}
+
+.aside-intro{
+    border: 1px solid red;
+    width: 40%;
+    background-color: #677182;
+    border-top-left-radius: inherit; border-bottom-left-radius:inherit ;
+}
+.logocont{
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid blue;
+    width: 100%;
+    margin: 2vw auto;
+}
+.intrologo{
+    border: 1px solid pink;
+    width: 90%;
+    height: auto; 
+}
+
+@media only screen and (max-width:700px) {
+.intro-sec{
+        flex-direction: column;
+}        
+.aside-intro{
+    width: 100%;
+    height: 40%;
+}
+.logocont{
+    width: 60%;
+}
 }

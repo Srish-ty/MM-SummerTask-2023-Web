@@ -3,6 +3,7 @@ import '../styles/nav.styles.css';
 import mmlogo from '../../images/logo_mm_white.png';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
+import SearchIcon from '@mui/icons-material/Search';
 
 export const NavMid = () => {
   return (
@@ -10,7 +11,7 @@ export const NavMid = () => {
       <a className='nav-item' href='#'>Home</a>
       <a className='nav-item' href='#'>Articles</a>
       <a className='nav-item' href='#'>About us</a>
-      <a className='nav-item' href='#'>Search</a>
+      <a className='nav-item' href='#'>Search  <SearchIcon/> </a>
     </div>
   )
 }
