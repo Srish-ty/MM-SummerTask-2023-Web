@@ -1,0 +1,31 @@
+.articont{
+    border: 1px solid red;
+    width: 90%; margin: 2vw auto;
+}
+
+.narticlepost{
+    background-color: aliceblue;
+    padding: 30px 50px;
+    border: 0px solid hotpink; border-radius: 5px;
+    width: 800px; 
+    margin: 3vw auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.postimg{
+    max-height: 500px;
+    max-width:100%;
+}
+
+.npara{
+    margin: 1vw auto;
+}
+
+.readMore{
+    color: inherit;
+    text-decoration: none;
+}
+.readMore:hover{
+    color: aqua;
+}
