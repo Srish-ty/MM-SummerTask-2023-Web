@@ -12,7 +12,7 @@ export const Article = ({data}) => {
       if(liked){setLike(false)}
       else{setLike(true)}
     }
-    var [liked, setLike] = useState(true);
+    var [liked, setLike] = useState(false);
     return (
     <div className='narticlepost'>
       <img alt={arti.title[0]} src={arti.urlToImage?arti.urlToImage:loadImg} className='postimg'></img>

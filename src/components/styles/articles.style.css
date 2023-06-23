@@ -23,9 +23,22 @@
 }
 
 .readMore{
+    border: 0px solid blue;
+    margin: 1vw 0vw;
     color: inherit;
     text-decoration: none;
 }
 .readMore:hover{
     color: aqua;
+}
+
+
+.likeview{
+    border-top: 2px solid aqua;
+    display: flex; flex-direction: row;
+    padding: 1vw 1.5vw 0.8vw 1.5vw;
+    margin-top: 1vw;
+}
+.liked{
+    color: #c71844;
 }
