@@ -1,14 +1,17 @@
 import React,{useState, useEffect} from 'react';
 import { apikey0 } from '../apikeys';
 import './styles/articles.style.css';
+import { SortNav } from './particles/SortNav';
 import { Article } from './particles/Article.js';
 
 
-export const Articles=({category})=>{
+export const Articles=()=>{
 
   const [articles, setArticles] = useState([]);
 
-  console.log(category);
+  const [category,setCategory] = useState('general');
+
+  //console.log(category);
   
     useEffect(()=>{
 
@@ -23,6 +26,10 @@ export const Articles=({category})=>{
     },[category])
     
   return(
+    <>
+
+    <SortNav selectCat={setCategory} val={category}/>
+
     <section className='articont'>
       {
     articles.map(
@@ -32,5 +39,6 @@ export const Articles=({category})=>{
     )
       }
     </section>
+    </>
   )
   }
