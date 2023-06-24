@@ -5,14 +5,15 @@ import { SortNav } from './particles/SortNav';
 import { Article } from './particles/Article.js';
 
 
-export const Articles=()=>{
+export const Articles=({setShowedart})=>{
 
   const [articles, setArticles] = useState([]);
 
   const [category,setCategory] = useState('general');
+  //const [showarticle, setShowedart] =  useState(articles[0])
 
+  let artid=0;
   //console.log(category);
-  
     useEffect(()=>{
 
     //console.log(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey0}&category=${category}`);
@@ -30,11 +31,11 @@ export const Articles=()=>{
 
     <SortNav selectCat={setCategory} val={category}/>
 
-    <section className='articont'>
+    <section className='articont' id='articont'>
       {
     articles.map(
       article=>(
-        <Article data={article}></Article>
+        <Article data={article} artid={artid++} showArti={setShowedart}></Article>
       )
     )
       }

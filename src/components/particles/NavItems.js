@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 import '../styles/nav.styles.css';
 import mmlogo from '../../images/logo_mm_white.png';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -8,8 +9,8 @@ import SearchIcon from '@mui/icons-material/Search';
 export const NavMid = () => {
   return (
     <div className='nav-mid'>
-      <a className='nav-item' href='#'>Home</a>
-      <a className='nav-item' href='#'>Articles</a>
+      <Link className='nav-item' to='/'>Home</Link>
+      <a className='nav-item' href='#articont'>Articles</a>
       <a className='nav-item' href='#'>About us</a>
       <a className='nav-item' href='#'>Search  <SearchIcon/> </a>
     </div>
@@ -27,8 +28,8 @@ export const NavEnd = ({current_mode, ont})=>{
 
 export const MMLogo = ()=>{
   return(
-    <span className='logo-cont'>
+    <Link to='/' className='logo-cont'>
       <img className='logo-img' src={mmlogo} alt='MM logo'/>
-    </span>
+    </Link>
   )
 }

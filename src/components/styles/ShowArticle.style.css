@@ -1,0 +1,14 @@
+.postnavi{
+    display: flex; flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid green;
+    margin: 0vw 0vw 1vw 0vw;
+    padding: 1vw 0.5vw;
+}
+.naviback{
+    color: #067874;
+}
+.postnavi:hover, .naviback:hover{
+    color: #2fc7c2;
+}
