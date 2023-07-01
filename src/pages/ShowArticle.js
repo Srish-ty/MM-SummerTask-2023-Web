@@ -15,6 +15,7 @@ export const ShowArticle = ({showing}) => {
     let [likeCount, setLikecount]= useState(0);
     var [liked, setLike] = useState(false);
     const likefunc=()=>{
+        //liked? likeCount-=1:likeCount+=1;
         likeCount+=1;
         setLikecount(likeCount); 
         liked? setLike(false):setLike(true)

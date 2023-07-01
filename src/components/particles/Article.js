@@ -13,13 +13,13 @@ export const Article = ({data, artid, showArti}) => {
     let [likeCount, setLikecount]= useState(0);
 
     const showThis=()=>{
+      viewCount+=1; setView(viewCount);
       showArti(arti);
+      console.log(arti)
     }
-    const incView=()=>{
-      viewCount+=1;
-      setView(viewCount); showArti(arti);
-    }
+    
     const likefunc=()=>{
+      //liked? likeCount-=1:likeCount+=1;
       likeCount+=1;
       setLikecount(likeCount); //console.log(likeCount);
       liked? setLike(false):setLike(true)
@@ -29,7 +29,7 @@ export const Article = ({data, artid, showArti}) => {
     <div className='narticlepost'>
       <img alt={arti.title[0]} src={arti.urlToImage?arti.urlToImage:loadImg} className='postimg'></img>
   
-      <Link to="/Article" className='nPara' onClick={showThis}>
+      <Link to="/Article" className='nPara' onClick={showThis}  >
         <h1 className='ptitle'>{arti.title}</h1>
   
         <div className='author'><b>Author: </b>{arti.author?arti.author:'unknown'}</div>
@@ -46,7 +46,7 @@ export const Article = ({data, artid, showArti}) => {
       }
       {likeCount}
       </span>
-      <Link to="/Article" className='viewed' onClick={incView} target="_blank" > Views:
+      <Link to="/Article" className='viewed' onClick={showThis} target="_blank" rel="noreferrer" > Views:
         <VisibilityIcon className='viewIco'/>
         {viewCount}
       </Link>

@@ -20,7 +20,7 @@ export const NavMid = () => {
 export const NavEnd = ({current_mode, ont})=>{
   return(
     <div className='nav-end'>
-      <a className='nav-item' href='#'>Login</a>
+      <Link className='nav-item' to='/Dashboard'>Login</Link>
       <a className='nav-item' id='dmode' href='#' onClick={ont}> { current_mode=='light'?<DarkModeIcon/> : <Brightness4Icon/> } </a>
     </div>
   )

@@ -1,0 +1,36 @@
+.form-cont{
+    background-color: #72a4b4;
+    width: 80%; min-height: 30vw;
+    display: flex; flex-direction: column;
+    align-items: center;
+    margin: 4vw auto;
+    padding: 2vw 3vw;
+}
+
+.arti-form{
+    padding: 3vw;
+    width: 60vw;
+    background-color: #b3e2f2;
+    display: flex; flex-direction: column;
+    align-items: baseline;
+}
+.inp-part{
+    margin: 1vw ;
+    width: 50vw;
+    padding: 1vw;
+    border: 0px solid palevioletred;
+    display: flex; flex-direction: row;
+    justify-content: space-evenly;
+}
+.inps{
+    width: 400px;
+    height: 50px;
+    border: 0px solid #d0dded;
+    outline: none;
+}
+.label{
+    border: 0px solid #00aeff;
+}
+.sub{
+    margin: 1vw auto;
+}
