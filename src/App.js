@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home setShowedart={setShowedart} />} />
         <Route index element={<Home setShowedart={setShowedart}/>} />
         <Route path="Article" element={<ShowArticle showing={showarticle} />} />
         <Route path='Dashboard' element={isLoggedIn? <ArticleForm/>:<Home/> }  />

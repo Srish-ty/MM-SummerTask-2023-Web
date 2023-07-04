@@ -29,6 +29,9 @@
     margin: 1vw auto;
     cursor: pointer;
 }
+.nPara:hover .ptitle{
+    color: #00a6ff;
+}
 
 .ptitle{
     cursor: pointer;
