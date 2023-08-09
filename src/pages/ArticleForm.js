@@ -45,12 +45,14 @@ function ArticleForm() {
     <>
     <Navbar/>
     <div className='form-cont'>
+      <h2> Add Article</h2>
     <form onSubmit={handleSubmit} className='arti-form'>
       <div className='inp-part'>
         <label htmlFor="title" className='label'>Title:</label>
         <input className='inps'
           type="text"
-          id="title"
+          id="title" 
+          name='title'
           value={title}
           onChange={(event) => setTitle(event.target.value)}
           required
@@ -59,7 +61,8 @@ function ArticleForm() {
       <div className='inp-part'>
         <label htmlFor="body" className='label'>Content:</label>
         <textarea className='inps'
-          id="body"
+          id="content"
+          name='content'
           value={content}
           onChange={(event) => setBody(event.target.value)}
           rows="4"
@@ -71,6 +74,7 @@ function ArticleForm() {
         <input className='inps'
           type="text"
           id="category"
+          name='category'
           value={category}
           onChange={(event) => setCategory(event.target.value)}
           required

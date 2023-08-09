@@ -35,7 +35,7 @@ export const Articles=({setShowedart})=>{
       {
     articles.map(
       article=>(
-        <Article data={article} artid={artid++} showArti={setShowedart}></Article>
+        <Article data={article} key={artid} artid={artid++} showArti={setShowedart}></Article>
       )
     )
       }
